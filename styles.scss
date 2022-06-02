@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: seashell;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid red;
+  ul li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: gray;
+      &:hover{
+          color: green;
+      }
+    }
+  }
+  .brand {
+    color: lightgray;
+  }
+  .logo {
+    color: lightgray;
+  }
+}
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+    .brand {
+      margin: 20px 0 20px 0;
+    }
+  }
+}
+
+.container {
+  max-width: 400px;
+  margin: 10vh auto 0 auto;
+  box-shadow: 3px 3px 20px lightblue;
+  border: 1px solid black;
+}
+
+#display {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+}
+
+.buttons {
+  color: white;
+  display: grid;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  div {
+    border-top: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+  }
+
+  .button {
+    background-color: gray;
+    border: 0.5px solid lightgray;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-color: white;
+      color: blue;
+    }
+  }
+
+  #equal {
+    background-color: orangered;
+    color: white;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-color: blue;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: seashell;
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 3px solid red;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gray;
+}
+
+.navbar ul li a:hover {
+  color: green;
+}
+
+.navbar .brand {
+  color: lightgray;
+}
+
+.navbar .logo {
+  color: lightgray;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .brand {
+    margin: 20px 0 20px 0;
+  }
+}
+
+.container {
+  max-width: 400px;
+  margin: 10vh auto 0 auto;
+  -webkit-box-shadow: 3px 3px 20px lightblue;
+          box-shadow: 3px 3px 20px lightblue;
+  border: 1px solid black;
+}
+
+#display {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+}
+
+.buttons {
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons div {
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+}
+
+.buttons .button {
+  background-color: gray;
+  border: 0.5px solid lightgray;
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.buttons .button:hover {
+  background-color: white;
+  color: blue;
+}
+
+.buttons #equal {
+  background-color: orangered;
+  color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.buttons #equal:hover {
+  background-color: blue;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
