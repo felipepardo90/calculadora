@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: orangered;
+  background-color: seashell;
 }
 
 .navbar {
@@ -44,12 +44,15 @@
 .container {
   max-width: 400px;
   margin: 10vh auto 0 auto;
-  box-shadow: 3px 3px 20px lightblue;
+  box-shadow: 3px 3px 20px black;
   border: 1px solid black;
+  border-radius: 5px;
 }
 
 #display {
   background-color: black;
+  border: 3px solid white;
+  border-radius: 4px;
   color: white;
   text-align: right;
   height: 70px;
@@ -65,17 +68,20 @@
   border-bottom: 1px solid lightgray;
   border-left: 1px solid lightgray;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
   div {
     border-top: 1px solid lightgray;
     border-right: 1px solid lightgray;
   }
 
   .button {
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px black;
     background-color: gray;
     border: 0.5px solid lightgray;
     line-height: 100px;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s ease-in-out;
